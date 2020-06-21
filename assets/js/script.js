@@ -244,12 +244,12 @@ var dragLeaveTaskHandler = function (event) {
 };
 
 var saveTasks = function() {
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    localStorage.setItem("tasksArr", JSON.stringify(tasks));
 };
 
 var loadTasks = function() {
     // get task items from localStorage
-    savedTasks = localStorage.getItem('tasks');
+    savedTasks = localStorage.getItem('tasksArr');
     if (!savedTasks) {
         return false;
     }
